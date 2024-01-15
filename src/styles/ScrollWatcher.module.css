@@ -1,0 +1,18 @@
+.scrollBox{
+    height: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: blue;
+    scale: 0 1;
+    animation: scrollAnimation linear;
+    animation-timeline: scroll();
+    transform-origin: left;
+}
+
+@keyframes scrollAnimation {
+    to{
+        scale: 1 1;
+    }
+}
